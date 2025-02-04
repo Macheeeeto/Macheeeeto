@@ -13,7 +13,7 @@ My education in computer science has led me to develop a passion for cybersecuri
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
-| SIEM Implementation and Log Analysis          | <a href="[https://google.com](https://github.com/Macheeeeto/AzureSentinal-Lab)">Detection Lab</a>|
+| SIEM Implementation and Log Analysis          | <a href="(https://github.com/Macheeeeto/AzureSentinal-Lab)">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
 
 ## Tools
