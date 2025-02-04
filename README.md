@@ -4,7 +4,6 @@
 I am a Senior Computer Science major with a concentration in Cybersecurity, data science minor at Lewis & Clark College.
 
 ## Objective
-[Provide Objective - Remove this afterwards]]
 
 My education in computer science has led me to develop a passion for cybersecurity. I am a motivated and detail-oriented college student pursuing a career in cybersecurity, eager to apply technical skills and problem-solving abilities in attempts to land a hands-on internship. I am currently seeking an opportunity to gain practical experience in threat analysis, network security, and or risk management to contribute to a dynamic security team while further developing my expertise.
 
@@ -16,7 +15,6 @@ My education in computer science has led me to develop a passion for cybersecuri
 | SIEM Implementation and Log Analysis          | <a href="https://github.com/Macheeeeto/AzureSentinal-Lab">Detection Lab</a>|
 
 ## Tools
-
 
 ### Network
 <div>
