@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your GitHub Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #111827;
+    }
+    code {
+      font-family: 'Fira Code', monospace;
+      background: #f0f0f0;
+      padding: 0.2em 0.4em;
+      border-radius: 5px;
+    }
+    pre {
+      background: #1e1e1e;
+      color: #f1f1f1;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 8px;
+    }
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #e5e7eb;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 📝 Paste your README content here as HTML or markdown converted to HTML -->
+
+    <h1>Hi, I'm Matt 👋</h1>
+    <p>I'm a software developer focused on <strong>cybersecurity</strong>, <strong>data science</strong>, and creative applications of <strong>AI</strong>.</p>
+
+    <h2>🚀 Projects</h2>
+    <ul>
+      <li><a href="https://github.com/yourusername/project1">Project 1</a> – Description of your project</li>
+      <li><a href="https://github.com/yourusername/project2">Project 2</a> – Description of your project</li>
+    </ul>
+
+    <h2>📫 Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a><br>
+    GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+
+    <hr>
+    <p><em>This page is generated from my GitHub README.</em></p>
+
+    <!-- You can paste HTML from https://markdowntohtml.com/ if needed -->
+
+  </div>
+</body>
+</html>
