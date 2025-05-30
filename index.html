@@ -7,44 +7,90 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #f9fafb;
+      --primary: #3b82f6;
+      --text: #1f2937;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --shadow: rgba(0, 0, 0, 0.05);
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f5f7fa;
-      color: #1f2937;
+      background: var(--bg);
+      color: var(--text);
       margin: 0;
       padding: 0;
-      line-height: 1.7;
+      line-height: 1.8;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 3rem auto;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      padding: 2.5rem;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 20px 30px var(--shadow);
     }
+
     h1, h2, h3 {
-      font-weight: 600;
       color: #111827;
+      font-weight: 600;
     }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
     a {
-      color: #3b82f6;
+      color: var(--primary);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    ul {
-      padding-left: 1.2em;
+
+    p, li {
+      font-size: 1rem;
     }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
     hr {
       border: none;
       height: 1px;
-      background-color: #e5e7eb;
-      margin: 2rem 0;
+      background: var(--border);
+      margin: 3rem 0;
     }
-    img.badge {
-      margin: 0.25rem 0.5rem 0.25rem 0;
+
+    .badge {
+      margin: 0.3rem 0.5rem 0.3rem 0;
+      vertical-align: middle;
+    }
+
+    .project {
+      background: #f1f5f9;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--primary);
+    }
+
+    .project p {
+      margin: 0.25rem 0 0;
+    }
+
+    .tool-group {
+      margin-bottom: 1rem;
+    }
+
+    .tool-group img {
+      margin: 0.2rem 0.4rem 0.2rem 0;
     }
   </style>
 </head>
@@ -58,26 +104,24 @@
     <p>I recently graduated from Lewis & Clark College with a degree in Computer Science, specializing in Cybersecurity and complemented by a minor in Data Science. Currently working as a Cybersecurity Specialist Intern at Lewis & Clark, gaining hands-on experience in threat detection, network security, and security operations.</p>
 
     <h2>🎯 Objective</h2>
-    <p>My education in computer science has led me to develop a passion for cybersecurity. I am a motivated and detail-oriented college student pursuing a career in cybersecurity, eager to apply technical skills and problem-solving abilities in a hands-on internship. I am currently seeking opportunities in threat analysis, network security, or risk management to contribute to a dynamic security team while developing my expertise.</p>
+    <p>I am a motivated and detail-oriented cybersecurity enthusiast seeking opportunities in threat analysis, network security, or risk management. I aim to contribute to a dynamic team and expand my skills in real-world environments.</p>
 
     <h2>🚀 Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/Macheeeeto/AzureSentinal-Lab" target="_blank"><strong>SIEM Azure Lab</strong></a>
-        <p><em>Description:</em> The PowerShell script in this repository is responsible for parsing out Windows Event Log information for failed RDP attacks and using a third-party API to collect geographic information about the attacker's location.</p>
-      </li>
-      <li>
-        <a href="https://github.com/Macheeeeto/SOC-Automation-LAB" target="_blank"><strong>SOC Automation Project</strong></a>
-        <p><em>Description:</em> This SOC Automation Lab project provided me a comprehensive approach to applying cybersecurity tools and techniques in a practical setting. It outlines a clear roadmap for developing an efficient and integrated SOC environment, equipped to tackle modern cybersecurity challenges.</p>
-      </li>
-      <li>
-        <a href="https://github.com/Macheeeeto/Keylogger" target="_blank"><strong>KeyLogger Code</strong></a>
-        <p><em>Description:</em> This project involves the development of a Python-based keylogger using the pynput library to capture and log user keystrokes in real time. The script records both regular characters and special keys, writing them to a secure local file. It demonstrates fundamental concepts in input event handling, file I/O, and system-level programming, and serves as an educational tool for understanding user input tracking and ethical hacking practices.</p>
-      </li>
-    </ul>
+    <div class="project">
+      <a href="https://github.com/Macheeeeto/AzureSentinal-Lab" target="_blank"><strong>SIEM Azure Lab</strong></a>
+      <p><em>Description:</em> Parses Windows Event Logs for failed RDP attacks and retrieves attacker geo-info via a third-party API.</p>
+    </div>
+    <div class="project">
+      <a href="https://github.com/Macheeeeto/SOC-Automation-LAB" target="_blank"><strong>SOC Automation Project</strong></a>
+      <p><em>Description:</em> A structured framework to build a functional SOC environment with integrated cybersecurity tools.</p>
+    </div>
+    <div class="project">
+      <a href="https://github.com/Macheeeeto/Keylogger" target="_blank"><strong>KeyLogger Code</strong></a>
+      <p><em>Description:</em> A Python keylogger script using <code>pynput</code> that captures keystrokes for educational use on ethical hacking.</p>
+    </div>
 
     <h2>🛠️ Skills</h2>
-    <h3>Technical Skills</h3>
+    <h3>Technical</h3>
     <ul>
       <li>Azure Security, AWS Security, Burp Suite, Wireshark</li>
       <li>TCP/IP, DNS, DHCP, VPN, Firewalls</li>
@@ -87,39 +131,37 @@
       <li>Linux, Ubuntu</li>
     </ul>
 
-    <h3>Soft Skills</h3>
+    <h3>Soft</h3>
     <ul>
-      <li>Problem-Solving, Critical Thinking, Communication & Documentation</li>
+      <li>Problem-Solving, Critical Thinking, Communication</li>
       <li>Attention to Detail, Teamwork, Time Management</li>
     </ul>
 
     <h2>🔧 Tools</h2>
     <h3>Network</h3>
-    <div>
+    <div class="tool-group">
       <img class="badge" src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
       <img class="badge" src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
       <img class="badge" src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
     </div>
 
     <h3>Endpoint</h3>
-    <div>
+    <div class="tool-group">
       <img class="badge" src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
       <img class="badge" src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
     </div>
 
     <h3>SIEM</h3>
-    <div>
+    <div class="tool-group">
       <img class="badge" src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
       <img class="badge" src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
       <img class="badge" src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
     </div>
 
     <h2>📜 Certifications</h2>
-    <div>
-      <img class="badge" src="https://img.shields.io/badge/-Google-4285F4?&style=for-the-badge&logo=Google&logoColor=white" />
-    </div>
+    <img class="badge" src="https://img.shields.io/badge/-Google-4285F4?&style=for-the-badge&logo=Google&logoColor=white" />
 
-    <h2>📫 Contact</h2>
+    <h2>📢 Contact</h2>
     <p>Email: <a href="mailto:matthew@thechio.com">matthew@thechio.com</a><br>
        GitHub: <a href="https://github.com/Macheeeeto">github.com/Macheeeeto</a><br>
        LinkedIn: <a href="https://www.linkedin.com/in/matthew-chio-349832252/">linkedin.com/in/matthew-chio</a></p>
