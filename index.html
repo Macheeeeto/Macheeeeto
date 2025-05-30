@@ -12,6 +12,7 @@
       --primary: #3b82f6;
       --text: #f8fafc;
       --card: #1e293b;
+      --card-hover: #273549;
       --border: #334155;
       --shadow: rgba(0, 0, 0, 0.2);
     }
@@ -33,6 +34,11 @@
       background: var(--card);
       border-radius: 16px;
       box-shadow: 0 20px 30px var(--shadow);
+      transition: background-color 0.3s ease;
+    }
+
+    .container:hover {
+      background-color: var(--card-hover);
     }
 
     h1, h2, h3 {
@@ -80,6 +86,12 @@
       border-radius: 12px;
       margin-bottom: 1.5rem;
       border-left: 4px solid var(--primary);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .project:hover {
+      background: #3b4d63;
+      transform: translateY(-3px);
     }
 
     .project p {
