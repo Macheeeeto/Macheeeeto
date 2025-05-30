@@ -11,46 +11,43 @@
       --bg: #0f172a;
       --primary: #3b82f6;
       --text: #f8fafc;
-      --card: rgba(30, 41, 59, 0.95);
-      --card-hover: rgba(39, 53, 73, 0.95);
+      --card: #1e293b;
+      --card-hover: #273549;
       --border: #334155;
-      --shadow: rgba(0, 0, 0, 0.4);
+      --shadow: rgba(0, 0, 0, 0.2);
     }
 
     body {
       font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top left, #0f172a 0%, #1e293b 100%);
+      color: var(--text);
       margin: 0;
       padding: 0;
       line-height: 1.8;
-      color: var(--text);
-      background: linear-gradient(120deg, #0f172a, #1e293b);
       background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-      background-blend-mode: overlay;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 4rem auto;
-      padding: 3rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2.5rem;
       background: var(--card);
-      border-radius: 20px;
-      box-shadow: 0 20px 40px var(--shadow);
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 20px 30px var(--shadow);
+      transition: background-color 0.3s ease;
     }
 
     .container:hover {
       background-color: var(--card-hover);
-      transform: scale(1.01);
     }
 
     h1, h2, h3 {
-      color: #e2e8f0;
+      color: #f1f5f9;
       font-weight: 600;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 0.5rem;
     }
 
@@ -112,7 +109,79 @@
 </head>
 <body>
   <div class="container">
-    <!-- Your portfolio content remains unchanged here -->
+    <h1>Hello, I'm Matthew Chio</h1>
+    <a href="https://www.linkedin.com/in/matthew-chio-349832252/">
+      <img class="badge" src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+    </a>
+
+    <p>I recently graduated from Lewis & Clark College with a degree in Computer Science, specializing in Cybersecurity and complemented by a minor in Data Science. Currently working as a Cybersecurity Specialist Intern at Lewis & Clark, gaining hands-on experience in threat detection, network security, and security operations.</p>
+
+    <h2>🎯 Objective</h2>
+    <p>I am a motivated and detail-oriented cybersecurity enthusiast seeking opportunities in threat analysis, network security, or risk management. I aim to contribute to a dynamic team and expand my skills in real-world environments.</p>
+
+    <h2>🚀 Projects</h2>
+    <div class="project">
+      <a href="https://github.com/Macheeeeto/AzureSentinal-Lab" target="_blank"><strong>SIEM Azure Lab</strong></a>
+      <p><em>Description:</em> Parses Windows Event Logs for failed RDP attacks and retrieves attacker geo-info via a third-party API.</p>
+    </div>
+    <div class="project">
+      <a href="https://github.com/Macheeeeto/SOC-Automation-LAB" target="_blank"><strong>SOC Automation Project</strong></a>
+      <p><em>Description:</em> A structured framework to build a functional SOC environment with integrated cybersecurity tools.</p>
+    </div>
+    <div class="project">
+      <a href="https://github.com/Macheeeeto/Keylogger" target="_blank"><strong>KeyLogger Code</strong></a>
+      <p><em>Description:</em> A Python keylogger script using <code>pynput</code> that captures keystrokes for educational use on ethical hacking.</p>
+    </div>
+
+    <h2>🛠️ Skills</h2>
+    <h3>Technical</h3>
+    <ul>
+      <li>Azure Security, AWS Security, Burp Suite, Wireshark</li>
+      <li>TCP/IP, DNS, DHCP, VPN, Firewalls</li>
+      <li>SIEM Monitoring, Threat Intelligence, Malware Analysis</li>
+      <li>Cryptography, Vulnerability Assessment, Cloud Security</li>
+      <li>Java, Python, SQL, C++, HTML</li>
+      <li>Linux, Ubuntu</li>
+    </ul>
+
+    <h3>Soft</h3>
+    <ul>
+      <li>Problem-Solving, Critical Thinking, Communication</li>
+      <li>Attention to Detail, Teamwork, Time Management</li>
+    </ul>
+
+    <h2>🔧 Tools</h2>
+    <h3>Network</h3>
+    <div class="tool-group">
+      <img class="badge" src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
+      <img class="badge" src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
+      <img class="badge" src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
+    </div>
+
+    <h3>Endpoint</h3>
+    <div class="tool-group">
+      <img class="badge" src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
+      <img class="badge" src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
+    </div>
+
+    <h3>SIEM</h3>
+    <div class="tool-group">
+      <img class="badge" src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
+      <img class="badge" src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
+      <img class="badge" src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
+    </div>
+
+    <h2>📜 Certifications</h2>
+    <img class="badge" src="https://img.shields.io/badge/-Google-4285F4?&style=for-the-badge&logo=Google&logoColor=white" />
+
+    <h2>📢 Contact</h2>
+    <p>Email: <a href="mailto:matthew@thechio.com">matthew@thechio.com</a><br>
+       GitHub: <a href="https://github.com/Macheeeeto">github.com/Macheeeeto</a><br>
+       LinkedIn: <a href="https://www.linkedin.com/in/matthew-chio-349832252/">linkedin.com/in/matthew-chio</a></p>
+
+    <hr>
   </div>
 </body>
 </html>
+
+Make this more like a website. Where it's not just a border with a white background. Make it look cooler
